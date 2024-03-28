@@ -1,0 +1,92 @@
+    body {
+    background-color: white;
+    }
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    nav {
+    background-color: white;
+    width: 100%;
+    min-width: 600px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    }
+    nav a {
+    position: relative;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: black;
+    text-align: left;
+    }
+    a::before {
+    content: " ";
+    width: 0;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    background-color: orange;
+    bottom: -7px;
+    transition: 0.5s;
+    }
+    a:hover {
+    color: orange;
+    }
+    a:hover::before {
+    width: 100%;
+    }
+    .flex {
+    background-color: rgb(232, 239, 240);
+    width: 50%;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    }
+    .flex div {
+    background-color: white;
+    color: black;
+    width: 100px;
+    height: 300px;
+    text-align: ;
+    padding: 20px;
+    margin-right: 5px;
+    flex-grow: 1;
+    }
+    div a {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 4px;
+    text-decoration: none;
+    border-radius: 10px;
+    }
+    h2 {
+        text-align: center;
+        font-family: sans-serif;
+        }
+    h3 {
+    text-align: center;
+    font-family: sans-serif;
+    color: red;
+    }
+    h6 {
+        color: blue;
+    }
+    h4 {
+    text-align: center;
+    font-family: sans-serif;
+    color: orange;
+    cursor: pointer;
+    }
+    ::selection {
+    background-color: black;
+    color: yellow;
+    }
